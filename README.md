@@ -1,44 +1,41 @@
 # ⚡ Zenith | Focus & Achieve
 
 <div align="center">
-  <img src="public/vite.svg" alt="Zenith Logo" width="100" />
-  <br/>
-  <b>A World-Class Productivity Suite for the Modern Developer</b>
+  <b>A Privacy-First Productivity Command Center</b>
   <br/>
   <br/>
   
   [![React](https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react)](https://reactjs.org/)
   [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.0-38bdf8?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
   [![Node.js](https://img.shields.io/badge/Node.js-18-green?style=for-the-badge&logo=node.js)](https://nodejs.org/)
-  [![MongoDB](https://img.shields.io/badge/MongoDB-6.0-47A248?style=for-the-badge&logo=mongodb)](https://www.mongodb.com/)
+  [![MongoDB](https://img.shields.io/badge/MongoDB-Local-47A248?style=for-the-badge&logo=mongodb)](https://www.mongodb.com/)
 </div>
 
 <br/>
 
 ## 🌟 Overview
 
-**Zenith** is not just another todo app. It is a **high-performance productivity command center** designed with a "Glassmorphism" aesthetic and deep focus features. It combines the utility of Todoist with the immersive design of a gaming interface.
+**Zenith** is a personal productivity app designed to run locally on your machine. It combines a beautiful "Glassmorphism" aesthetic with powerful focus features.
 
-Built on the MERN stack (MongoDB, Express, React, Node.js), Zenith features a fully custom-built calendar system, a Pomodoro-style Focus Mode, and seamless PWA (Progressive Web App) capabilities for installation on any device.
+Unlike cloud apps that store your data on someone else's server, Zenith is designed to connect to your own local database. **You own your tasks, your data, and your focus.**
 
 ## ✨ Key Features
 
-- **🎨 Zenith Ultra UI:** A stunning dark/light mode interface with "Northern Lights" animated backgrounds and frosted glass cards.
-- **📅 Custom Date Logic:** A built-from-scratch interactive calendar popover with smart date handling (Today, Tomorrow, Next Week).
-- **⚡ Focus Mode:** An immersive, distraction-free overlay with a kinetic ring timer to help you flow through tasks.
-- **📱 PWA Ready:** Installable as a native app on iOS, Android, Mac, and Windows.
-- **🔍 Smart Sidebar:** Quick filters, project organization, and instant task searching.
-- **⚡ Live Editing:** Inline editing for task text, dates, and priorities without leaving the list view.
+- **🎨 Zenith Ultra UI:** A stunning dark mode interface with animated backgrounds and frosted glass cards.
+- **📅 Smart Calendar:** A custom-built interactive date picker to manage your schedule.
+- **⚡ Focus Mode:** An immersive, full-screen timer with a kinetic ring to help you complete tasks.
+- **✏️ Inline Editing:** Edit task details, dates, and priorities instantly without leaving the list.
+- **🔒 Privacy Focused:** Runs 100% locally on your machine using your own database.
 
 ## 🚀 Getting Started
 
-Follow these instructions to get a copy of the project up and running on your local machine.
+Follow these steps to get Zenith running on your computer.
 
 ### Prerequisites
 
-* **Node.js** (v16 or higher)
-* **MongoDB** (Local installation or Atlas URI)
-* **Git**
+1.  **Node.js:** [Download & Install](https://nodejs.org/)
+2.  **MongoDB Compass:** [Download & Install](https://www.mongodb.com/try/download/compass) (This is your local database)
+3.  **Git:** [Download & Install](https://git-scm.com/)
 
 ### 🔧 Installation
 
@@ -53,42 +50,23 @@ Follow these instructions to get a copy of the project up and running on your lo
     npm install
     ```
 
-3.  **Configure Environment**
-    Create a `.env` file in the root directory:
+3.  **Configure Your Environment**
+    Create a new file named `.env` in the root folder and paste this in:
     ```env
     PORT=3000
-    MONGO_URI=mongodb://127.0.0.1:27017/my_todo_app
+    MONGO_URI=mongodb://127.0.0.1:27017/zenith_db
     VITE_API_URL=http://localhost:3000/api
     ```
+    *Note: This connects the app to your local MongoDB instance.*
 
 4.  **Run the App**
-    This command starts both the Backend API and the Frontend Client concurrently:
+    This command starts both the backend and frontend at the same time:
     ```bash
     npm run dev
     ```
 
 5.  **Open Zenith**
     Visit `http://localhost:5173` in your browser.
-
-## 📱 Mobile Installation (PWA)
-
-Since Zenith is a PWA, you can install it on your phone:
-1.  Navigate to your deployed URL (or local network IP).
-2.  **iOS:** Tap "Share" -> "Add to Home Screen".
-3.  **Android:** Tap "Three Dots" -> "Install App".
-
-## 🛠️ Built With
-
-* [React](https://reactjs.org/) - Frontend Framework
-* [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS Framework
-* [Express](https://expressjs.com/) - Web Framework for Node.js
-* [Mongoose](https://mongoosejs.com/) - MongoDB Object Modeling
-* [Lucide React](https://lucide.dev/) - Beautiful & Consistent Icons
-* [Date-fns](https://date-fns.org/) - Modern Date Utility Library
-
-## 🤝 Contributing
-
-contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
 <div align="center">
